@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="A photo for croissant lovers" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -13,6 +15,21 @@
     <title>Croissant</title>
   </head>
 
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-N19QRWT38D"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-N19QRWT38D");
+  </script>
+
   <body class="ml-4 mr-4">
     <h1 class="text-center mt-5">🥐 Picture of a Croissant</h1>
     <img
@@ -22,9 +39,16 @@
     />
 
     <footer class="d-flex flex-row justify-content-center mt-5 mb-5">
-      <a href="/" class="text-success">Home</a>
-      <a href="/photo.html" class="text-success">Photo</a>
-      <a href="/contact.html" class="text-success">Contact me</a>
+      <a href="/" class="text-success" title="croissant homepage">Home</a>
+      <a href="/photo.html" class="text-success" title="Photo of croissants"
+        >Photo</a
+      >
+      <a
+        href="/contact.html"
+        class="text-success"
+        title="contact croissant lovers like you"
+        >Contact me</a
+      >
     </footer>
   </body>
 </html>
